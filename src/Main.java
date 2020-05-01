@@ -1,13 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        int Account = 10000; // В копейках
-        int Admission = 110000; // В копейках
-        if (Admission < 100000){
-            Account = (Account + Admission) / 100;
-            System.out.println(Account);
+        int account = 10000; // В копейках
+        int admission = 110000; // В копейках
+        if (admission < 100000){
+            account = (account + admission) / 100;
+            System.out.println(account);
         }
-        int Bonus = Admission / 10000;
-        Account = Bonus + ((Account + Admission) / 100);
-        System.out.println(Account);
+        else {
+            int bonus = admission / 10000;
+            account = bonus + ((account + admission) / 100);
+            System.out.println(account);
+        }
     }
 }
